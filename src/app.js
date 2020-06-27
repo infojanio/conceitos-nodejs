@@ -87,6 +87,6 @@ app.post("/repositories/:id/like", (request, response) => {
   //caso exista o repository procurado
   repositories[repositoryIndex].likes +=1; //adiciona mais 1 like
   return response.json(repositories[repositoryIndex]); //retorna o repositories que o likes foi adicionado
-});
+}); 
 
 module.exports = app;
