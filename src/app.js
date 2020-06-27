@@ -47,7 +47,7 @@ app.put("/repositories/:id", (request, response) => {
       likes: repositories[repositoryIndex].likes, //pega o n. likes de antes de atualizar os repositories
     };
     repositories[repositoryIndex] = repository;
-    return response.json(repository);
+    return response.json(repository); //retorna objeto
   });    
        //A parte comentada é outra forma de se fazer o update
     /*  let repository = repositories.find( repository => repository.id === id )
